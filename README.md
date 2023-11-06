@@ -37,7 +37,7 @@ After connecting to the database, you can see the H3 schema, which already conta
   <img src="./img/h3.png" width="400" height="400">
 </div>
 <div style="text-align:center;">
-  <img src="./img/h3_example.png" width="400" height="400">
+  <img src="./img/h3_example.png">
 </div>
 
 
