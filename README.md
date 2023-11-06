@@ -1,12 +1,5 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]]
-
 Create PostgreSQL 15.4 with PostGIS and Uber's H3 extension in docker container and some pre-installed h3 tables.
 
 ### Prerequisites
@@ -52,7 +45,11 @@ To create hexagons with 2, 3, and etc resolutions run this code
     FROM h3.hex 
    WHERE resolution IN (SELECT MAX(resolution) FROM h3.hex);
   ```
+More about Uber's H3 you can find [here](https://h3geo.org/)
 
+<!-- CONTACT -->
+## Contact
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
