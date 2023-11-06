@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  postgres:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./database:/var/lib/postgresql/data
+    container_name: pg15_h3
