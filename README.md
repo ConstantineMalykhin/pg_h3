@@ -16,7 +16,6 @@ It's needed docker to be installed on your machine. You can download Docker from
 ```bash
 $ git clone https://github.com/ConstantineMalykhin/pg_h3.git
 $ cd pg_h3
-```
 
 2. Build docker-compose
 ```bash
