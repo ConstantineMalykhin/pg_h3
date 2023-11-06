@@ -39,7 +39,8 @@ Since then docker-compose run in detached mode, you can connect to PostgreSQL wi
 For example, you can connect to DB via [DBeaver](https://dbeaver.io/).
 
 After connecting to DB, you can see h3 schema that already contains table 'hex' with hexagons of 0 and 1 resolution.
-<img src="./img/h3.png" width="200" height="200">
+<br></br>
+<img src="./img/h3.png" width="400" height="400">
 
 To create hexagons with 2, 3, and etc resolutions run this code
 
