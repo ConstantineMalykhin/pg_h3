@@ -1,10 +1,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Create PostgreSQL 15.4 with PostGIS and Uber's H3 extension in docker container and some pre-installed h3 tables.
+This project aims to set up PostgreSQL 15.4 with PostGIS and Uber's H3 extension in a Docker container, along with some pre-installed H3 tables.
 
 ### Prerequisites
 
-It's needed docker to be installed on your machine. You can download Docker from the [official site](https://www.docker.com/products/docker-desktop/)
+Docker needs to be installed on your machine. You can download Docker from the [official site](https://www.docker.com/products/docker-desktop/)
 
 ### Installation
 
@@ -14,28 +14,28 @@ It's needed docker to be installed on your machine. You can download Docker from
     cd pg_h3
     ```
 
-2. Build docker-compose
+2. Build the Docker Compose
     ```bash
     docker-compose build
     ```
 
-3. Up docker-compose
+3. Start the Docker Compose
     ```bash
     docker-compose up -d
     ```
 
-Since then docker-compose run in detached mode, you can connect to PostgreSQL with the credentials that were provided in docker-compose setup:
+Since Docker Compose runs in detached mode, you can connect to PostgreSQL using the credentials provided in the Docker Compose setup:
     - POSTGRES_USER: admin
     - POSTGRES_PASSWORD: admin
     - POSTGRES_DB: postgres
 
-For example, you can connect to DB via [DBeaver](https://dbeaver.io/).
+For instance, you can connect to the database using [DBeaver](https://dbeaver.io/).
 
-After connecting to DB, you can see h3 schema that already contains table 'hex' with hexagons of 0 and 1 resolution.
+After connecting to the database, you can see the H3 schema, which already contains a `hex` table with hexagons of resolutions 0 and 1.
 <br></br>
 <img src="./img/h3.png" width="400" height="400">
 
-To create hexagons with 2, 3, and etc resolutions run this code
+To create hexagons with resolutions 2, 3, and so on, run the following SQL code:
 
   ```sql
   INSERT INTO h3.hex (ix, resolution, geom)
@@ -45,7 +45,7 @@ To create hexagons with 2, 3, and etc resolutions run this code
     FROM h3.hex 
    WHERE resolution IN (SELECT MAX(resolution) FROM h3.hex);
   ```
-More about Uber's H3 you can find [here](https://h3geo.org/)
+For more information about Uber's H3, you can visit their website [here](https://h3geo.org/)
 
 <!-- CONTACT -->
 ## Contact
