@@ -25,15 +25,19 @@ Docker needs to be installed on your machine. You can download Docker from the [
     ```
 
 Since Docker Compose runs in detached mode, you can connect to PostgreSQL using the credentials provided in the Docker Compose setup:
-    - POSTGRES_USER: admin
-    - POSTGRES_PASSWORD: admin
-    - POSTGRES_DB: postgres
+- POSTGRES_USER: admin
+- POSTGRES_PASSWORD: admin
+- POSTGRES_DB: postgres
 
 For instance, you can connect to the database using [DBeaver](https://dbeaver.io/).
 
 After connecting to the database, you can see the H3 schema, which already contains a `hex` table with hexagons of resolutions 0 and 1.
 <br></br>
-<img src="./img/h3.png" width="400" height="400">
+<div style="text-align:center;">
+  <img src="./img/h3.png" width="400" height="400">
+  <img src="./img/h3_example.png" width="400" height="400">
+</div>
+
 
 To create hexagons with resolutions 2, 3, and so on, run the following SQL code:
 
