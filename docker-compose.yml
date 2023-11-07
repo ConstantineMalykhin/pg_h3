@@ -13,4 +13,5 @@ services:
       - "5432:5432"
     volumes:
       - ./database:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     container_name: pg15_h3
