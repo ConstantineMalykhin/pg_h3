@@ -14,4 +14,4 @@ services:
     volumes:
       - ./database:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
-    container_name: pg15_h3
+    container_name: pg16_h3
